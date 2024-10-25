@@ -2,20 +2,159 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.main-card {
+  background: linear-gradient(rgba(0, 46, 42, 0.9), rgba(0, 46, 42, 0.9)),
+    url("../public/assets/image-1.png");
+  background-size: cover;
+}
+.sub-card1 {
+  background: linear-gradient(
+      rgba(149, 255, 229, 0.9),
+      rgba(149, 255, 229, 0.9)
+    ),
+    url("../public/assets/image-2.png");
+  background-size: cover;
+}
+.sub-card2 {
+  background: linear-gradient(
+      rgba(252, 255, 139, 0.9),
+      rgba(252, 255, 139, 0.9)
+    ),
+    url("../public/assets/image-3.png");
+  background-size: cover;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.course-card1 {
+  background: linear-gradient(rgba(57, 116, 204, 0.8), rgba(57, 116, 204, 0.8)),
+    url("../public/assets/imageCard1.png");
+  background-size: cover;
+}
+.course-card2 {
+  background: linear-gradient(rgba(42, 0, 95, 0.8), rgba(42, 0, 95, 0.8)),
+    url("../public/assets/imageCard2.png");
+  background-size: cover;
+}
+.course-card3 {
+  background: linear-gradient(rgba(0, 18, 63, 0.8), rgba(0, 18, 63, 0.8)),
+    url("../public/assets/imageCard3.png");
+  background-size: cover;
+}
+.course-card4 {
+  background: linear-gradient(rgba(0, 112, 119, 0.8), rgba(0, 112, 119, 0.8)),
+    url("../public/assets/imageCard4.png");
+  background-size: cover;
+}
+
+.course-o-card1 {
+  background: linear-gradient(
+      rgba(252, 255, 139, 0.9),
+      rgba(252, 255, 139, 0.9)
+    ),
+    url("../public/assets/imageCard2-1.png");
+  background-size: cover;
+}
+.course-o-card2 {
+  background: linear-gradient(rgba(0, 13, 46, 0.9), rgba(0, 13, 46, 0.9)),
+    url("../public/assets/imageCard2-2.png");
+  background-size: cover;
+}
+.course-o-card3 {
+  background: linear-gradient(
+      rgba(149, 255, 229, 0.9),
+      rgba(149, 255, 229, 0.9)
+    ),
+    url("../public/assets/imageCard2-3.png");
+  background-size: cover;
+}
+.course-o-card4 {
+  background: linear-gradient(rgba(6, 0, 46, 0.69), rgba(6, 0, 46, 0.69)),
+    url("../public/assets/imageCard2-4.png");
+  background-size: cover;
+}
+
+.news-card1 {
+  background: linear-gradient(rgba(8, 22, 49, 0.9), rgba(8, 22, 49, 0.9)),
+    url("../public/assets/imageCard3-1.png");
+  background-size: cover;
+}
+.news-card2 {
+  background: linear-gradient(rgba(0, 46, 61, 0.9), rgba(0, 46, 61, 0.9)),
+    url("../public/assets/imageCard3-2.png");
+  background-size: cover;
+}
+.news-card3 {
+  background: linear-gradient(rgba(13, 46, 109, 0.8), rgba(13, 46, 109, 0.8)),
+    url("../public/assets/imageCard3-3.png");
+  background-size: cover;
+}
+.news-card4 {
+  background: linear-gradient(rgba(21, 28, 89, 0.8), rgba(21, 28, 89, 0.8)),
+    url("../public/assets/imageCard3-4.png");
+  background-size: cover;
+}
+.news-card5 {
+  background: linear-gradient(rgba(5, 45, 67, 0.8), rgba(5, 45, 67, 0.8)),
+    url("../public/assets/imageCard3-5.png");
+  background-size: cover;
+}
+
+.deg-card {
+  transform: rotate(-90deg);
+}
+
+.ph-font24::placeholder {
+  background-image: url("../public/assets/search.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  padding: 0px 0px 0px 32px;
+  font-size: 19px;
+}
+@media (max-width: 640px) {
+  .card-course {
+    width: 240px !important;
+  }
+  .card-online {
+    width: 240px !important;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .ph-font24::placeholder {
+    background-image: url("../public/assets/search.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    padding: 0px 0px 0px 40px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
+.card-course {
+  width: 280px;
+  height: 330px;
+}
+
+.card-online {
+  width: 280px;
+  height: 550px;
+}
+
+.custom-select {
+  color: #fff;
+  background-color: #1c1c29;
+  border-color: #1c1c29;
+  padding: 20px;
+  border-radius: 1rem;
 }
